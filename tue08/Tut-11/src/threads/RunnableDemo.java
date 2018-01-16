@@ -4,7 +4,7 @@ package threads;
  * Option 2 to make something run in parallel:
  * implement Runnable
  * 
- * The other option is to extend Thread (See {@link threads.CounterThread})
+ * The other option is to extend Thread (See {@link threads.CounterThread CounterThread})
  */
 public class RunnableDemo implements Runnable {
 	

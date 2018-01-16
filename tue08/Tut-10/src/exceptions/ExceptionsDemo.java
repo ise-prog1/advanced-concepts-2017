@@ -50,6 +50,7 @@ public class ExceptionsDemo {
 	}
 
 	public static int addPositive(int a, int b) {
+		// Use IllegalArgumentException for parameter validation
 		if (a < 0 || b < 0) {
 			throw new IllegalArgumentException("Parameter is negative");
 		}
