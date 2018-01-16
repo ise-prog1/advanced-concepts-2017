@@ -4,6 +4,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This class demonstrates a part of the java.util.concurrent package.
+ * 
+ * These solutions are to be preferred over using your own Threads!
+ */
 public class ExecutorDemo {
 	
 	public static void main(String[] args) throws InterruptedException {

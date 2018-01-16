@@ -19,6 +19,7 @@ public class ThreadSleepDemo implements Runnable {
 		sleeper.start();
 		Thread.sleep(5000);
 		sleeper.interrupt();
+		// This version continues its works after being interrupted.
 	}
 	
 }

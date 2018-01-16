@@ -8,7 +8,6 @@ public class ThreadSleepBetterDemo implements Runnable {
 		try {
 			for (int i = 0; i < 25; i++) {
 				System.out.println("i: " + i);
-				
 				Thread.sleep(500);
 			}
 		} catch (InterruptedException e) {
@@ -21,8 +20,8 @@ public class ThreadSleepBetterDemo implements Runnable {
 		Thread sleeper = new Thread(new ThreadSleepBetterDemo());
 		sleeper.start();
 		Thread.sleep(2500);
+		// causes the InterruptedException in the other Thread
 		sleeper.interrupt();
-		sleeper.join();
 	}
 
 }

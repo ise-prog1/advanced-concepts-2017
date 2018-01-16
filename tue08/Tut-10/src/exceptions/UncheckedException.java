@@ -1,5 +1,8 @@
 package exceptions;
-
+/**
+ * How to create your own UncheckedException:
+ * Simply extends RuntimeException
+ */
 public class UncheckedException extends RuntimeException {
 
 	public UncheckedException() {
