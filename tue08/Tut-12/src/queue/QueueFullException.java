@@ -1,7 +1,7 @@
 package queue;
 
 /**
- * This exceptions represents the error of a full queue
+ * This checked exception represents the error of a full queue.
  */
 public class QueueFullException extends Exception {
 
