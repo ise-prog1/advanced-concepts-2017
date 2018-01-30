@@ -45,6 +45,7 @@ public class Main {
 		//File file = input.toFile();
 		//file.toPath();
 		List<String> elements = null;
+		// Try with resources statement, closes the Reader automatically, since Java8
 		try (BufferedReader reader = Files.newBufferedReader(input, StandardCharsets.UTF_8)) {
 			elements = reader.lines().skip(6).collect(Collectors.toList());
 		}
@@ -65,6 +66,11 @@ public class Main {
 		
 	}
 	
+	/**
+	 * Parses the given input.txt file
+	 * @param lines
+	 * @return a list of Kunde objects
+	 */
 	public static List<Kunde> parseKunden(List<String> lines) {
 		List<Kunde> kunden = new ArrayList<>();
 		Kunde k = null;
